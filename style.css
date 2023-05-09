@@ -12,10 +12,14 @@
   --bg-input: #06181c;
   --bg-button: #065e7c;
   --bg-button-hover: #ffffff;
+  --bg-header-table: #092d38;
 
   --ft-placeholder: #7c7c8a;
   --ft-button: #ffffff;
   --ft-button-hover: #065e7c;
+
+  --ft-table: #e1e1e6;
+  --ft-remove: #f75a68;
 }
 
 body {
@@ -84,4 +88,79 @@ header {
 
 .search button:hover svg path {
   fill: var(--ft-button-hover);
+}
+
+/*Table*/
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table * {
+  font-size: 2rem;
+  color: var(--ft-table);
+}
+
+table th {
+  background-color: var(--bg-header-table);
+  padding: 1.6rem;
+  text-align: left;
+}
+
+table th:first-child {
+  border-top-left-radius: 0.4rem;
+}
+
+table th:last-child {
+  border-top-right-radius: 0.4rem;
+}
+
+/*Seleciona as linhas pares da tabela*/
+table tr:nth-child(even) {
+  background: rgba(6, 22, 27, 0.5);
+}
+
+/*Seleciona as linhas impares da tabela*/
+table tr:nth-child(odd) {
+  background: #06181c;
+}
+
+table td {
+  padding: 1.5rem;
+  text-align: left;
+}
+
+td.user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+td.user img {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover; /*Faz a imagem cobrir todo espaço*/
+  border-radius: 50%;
+}
+
+td.user a {
+  text-decoration: none;
+}
+
+td.user p {
+  font-weight: bold;
+}
+
+td.user span {
+  font-weight: normal;
+}
+
+td .remove {
+  border: none;
+  background: none;
+  color: var(--ft-remove);
+  cursor: pointer;
+  font-weight: 700;
 }
