@@ -1,4 +1,4 @@
-import { GithubUser } from './GithubUser.js'
+import { GithubUser } from "./GithubUser.js";
 
 //Classe que vai conter a lógica dos dados
 export class Favorites {
@@ -93,10 +93,24 @@ export class FavoritesView extends Favorites {
 
       this.tbody.append(row);
     });
+    this.emptyList();
+  }
+
+  emptyList() {
+    const tabela = document.querySelector("table");
+    const aviso = document.querySelector(".empty-list");
+    const rows = tabela.querySelectorAll(".user-row");
+  
+    if (rows.length === 0) {
+      aviso.classList.remove("hidden");
+    } else {
+      aviso.classList.add("hidden");
+    }
   }
 
   createRow() {
     const tr = document.createElement("tr");
+    tr.classList.add("user-row");
 
     tr.innerHTML = `
     <td class="user">
@@ -112,7 +126,7 @@ export class FavoritesView extends Favorites {
     <td class="repositories">53</td>
     <td class="followers">53</td>
     <td>
-      <button class="remove">remove</button>
+      <button class="remove">remover</button>
     </td>
   `;
 

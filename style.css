@@ -39,7 +39,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 11.5rem;
+  margin: 11.5rem 0 9.1rem;
 }
 
 .search {
@@ -92,10 +92,14 @@ header {
 
 /*Table*/
 
+.container-table {
+  margin-top: 0;
+  border: 1px solid #4a808c;
+  border-radius: 0.4rem;
+}
 
 table {
   width: 100%;
-  margin-top: 9.1rem;
   border-collapse: collapse;
 }
 
@@ -126,6 +130,7 @@ table tr:nth-child(even) {
 /*Seleciona as linhas impares da tabela*/
 table tr:nth-child(odd) {
   background: #06181c;
+  border-top: 1px solid #4a808c;
 }
 
 table td {
@@ -164,4 +169,29 @@ td .remove {
   color: var(--ft-remove);
   cursor: pointer;
   font-weight: 700;
+}
+
+.empty-list {
+  width: 100%;
+  background-color: transparent;
+  height: 50rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+}
+
+.empty-list img {
+  width: 13.2rem;
+}
+
+.empty-list p {
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 2.5rem;
+  color: #4e5455;
+}
+
+.hidden {
+  display: none;
 }
