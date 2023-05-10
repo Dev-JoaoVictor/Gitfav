@@ -31,6 +31,7 @@ body {
 .app {
   max-width: 112rem;
   margin: 0 auto;
+  margin-bottom: 5rem;
 }
 
 /*Header*/
@@ -96,7 +97,21 @@ header {
   margin-top: 0;
   border: 1px solid #4a808c;
   border-radius: 0.4rem;
+  max-height: 50rem; /* define a altura máxima da tabela */
+  overflow-y: auto;
 }
+
+/* Personaliza a cor e o tamanho do scroll vertical */
+.container-table::-webkit-scrollbar {
+  position: relative;
+  width: 0.6rem;
+}
+
+.container-table::-webkit-scrollbar-thumb {
+  background-color: #4A808C;
+
+}
+
 
 table {
   width: 100%;
