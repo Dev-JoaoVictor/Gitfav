@@ -97,7 +97,7 @@ header {
   margin-top: 0;
   border: 1px solid #4a808c;
   border-radius: 0.4rem;
-  max-height: 50rem; /* define a altura máxima da tabela */
+  max-height: 60rem;
   overflow-y: auto;
 }
 
