@@ -114,3 +114,15 @@ td .remove {
   line-height: 2.5rem;
   color: #4e5455;
 }
+
+@media (max-width: 1024px) {
+  .container-table {
+    width: 75%;
+  }
+  .empty-list img{
+    width: 5rem;
+  }
+  .empty-list p{
+    font-size: 3rem;
+  }
+}

@@ -45,3 +45,9 @@
 .search button:hover svg path {
   fill: var(--ft-button-hover);
 }
+
+@media (max-width: 1024px) {
+  #input-search {
+    width: 30rem;
+  }
+}

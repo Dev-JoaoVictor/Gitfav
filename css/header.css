@@ -4,3 +4,12 @@ header {
   justify-content: space-between;
   margin: 5rem 0 9.1rem;
 }
+
+@media (max-width: 1024px) {
+  header {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+}
