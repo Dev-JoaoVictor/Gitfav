@@ -1,0 +1,42 @@
+@import url('./header.css');
+@import url('./search.css');
+@import url('./table.css');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --bg--body: #000000;
+  --bg-input: #06181c;
+  --bg-button: #065e7c;
+  --bg-button-hover: #ffffff;
+  --bg-header-table: #092d38;
+
+  --ft-placeholder: #7c7c8a;
+  --ft-button: #ffffff;
+  --ft-button-hover: #065e7c;
+
+  --ft-table: #e1e1e6;
+  --ft-remove: #f75a68;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--bg--body);
+}
+
+.app {
+  max-width: 112rem;
+  margin: 0 auto;
+}
+
+.hidden {
+  display: none;
+}

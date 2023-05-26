@@ -1,0 +1,6 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5rem 0 9.1rem;
+}
